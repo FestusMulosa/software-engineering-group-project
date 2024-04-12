@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Alert Box Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background-color: rgb(231, 253, 30);
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    h1 {
+      color: #333;
+      margin-top: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>This page will display an alert box every 30 seconds</h1>
+
+    <script>
+      // Function to display the alert box
+      function showAlert() {
+        alert("Make sure you have completed the task before proceeding!");
+      }
+
+      // Call the showAlert function every 30 seconds
+      setInterval(showAlert, 5000);
+    </script>
+  </div>
+</body>
+</html>
